@@ -1,0 +1,91 @@
+@startuml
+
+class FXMLController
+{
+    --attributes--
+    +TableView<AddEvent> tableview;
+    +TableColumn<AddEvent, String> eventColumn;
+    +TableColumn<AddEvent, String> descColumn;
+    +TableColumn<AddEvent, DatePicker> dateColumn;
+    +TextField descTextField;
+    +TextField eventTextField;
+    +DatePicker datePicker;
+    +TableColumn<AddEvent, String> statusColumn;
+
+    --methods--
+    +initialize(URL url, ResourceBundle rb)
+    +buttonAdd()
+    +buttonDelete()
+    +edit()
+
+}
+
+class AddEvent
+{
+    --attributes--
+    - SimpleStringProperty name;
+    - SimpleStringProperty desc;
+    - DatePicker datePicker;
+    - CheckBox check;
+
+    --methods--
+    +String getName()
+    +String getDesc()
+    +DatePicker getDatePicker()
+    +CheckBox getCheck()
+    +setName(name)
+    +setDesc(desc)
+    +setDatePicker(LocalDate datePicker
+    +setCheck(Checkbox check)
+}
+
+class RemoveEvent
+{
+    +remove()
+}
+
+class EditEvent
+{
+    +edit()
+}
+
+class Application
+
+
+class application
+{
+    +start()
+    +main()
+}
+
+class OpenListFile
+{
+    +open()
+}
+
+class MakeNewList
+{
+    +newList()
+}
+
+class SaveList
+{
+    +save()
+}
+
+class FilterList
+{
+    +filterComplete()
+    +filterIncomplete()
+}
+
+Application <|-- "extends" application
+FXMLController <-- AddEvent
+FXMLController <-- RemoveEvent
+FXMLController <-- EditEvent
+FXMLController <-- MakeNewList
+FXMLController <-- SaveList
+FXMLController <-- OpenListFile
+FXMLController <-- FilterList
+
+@enduml
