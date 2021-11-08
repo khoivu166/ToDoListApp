@@ -1,37 +1,37 @@
 
-k	java:S116$"VRename this field "FileMenuBar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÍ¨Ü
-m	java:S116&"XRename this field "ShowCompleted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¯°ˆ
+k	java:S116+"VRename this field "FileMenuBar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŞÍ¨Ü
+m	java:S116-"XRename this field "ShowCompleted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¯°ˆ
 t
-java:S1171I"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+java:S1171T"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+]
+java:S1075Ê"ARefactor your code to get this URI from a customizable parameter.(¼‚ßíşÿÿÿÿ
 m
-java:S1104"WMake eventColumn a static final constant or non-public and provide accessors if needed.(à¼«§
+java:S1104$"WMake eventColumn a static final constant or non-public and provide accessors if needed.(à¼«§
 l
-java:S1104"VMake descColumn a static final constant or non-public and provide accessors if needed.(ÔªÖ„
+java:S1104%"VMake descColumn a static final constant or non-public and provide accessors if needed.(ÔªÖ„
 k
-java:S1104"VMake dateColumn a static final constant or non-public and provide accessors if needed.(……î%
+java:S1104&"VMake dateColumn a static final constant or non-public and provide accessors if needed.(……î%
 o
-java:S1104 "YMake descTextField a static final constant or non-public and provide accessors if needed.(Âïö•
+java:S1104'"YMake descTextField a static final constant or non-public and provide accessors if needed.(Âïö•
 p
-java:S1104!"ZMake eventTextField a static final constant or non-public and provide accessors if needed.(ÊÂòö
+java:S1104("ZMake eventTextField a static final constant or non-public and provide accessors if needed.(ÊÂòö
 q
-java:S1104""VMake datePicker a static final constant or non-public and provide accessors if needed.(ĞÔÆøÿÿÿÿ
+java:S1104)"VMake datePicker a static final constant or non-public and provide accessors if needed.(ĞÔÆøÿÿÿÿ
 s
-java:S1104#"XMake statusColumn a static final constant or non-public and provide accessors if needed.(‹û¬çúÿÿÿÿ
+java:S1104*"XMake statusColumn a static final constant or non-public and provide accessors if needed.(‹û¬çúÿÿÿÿ
 m
-java:S1104$"WMake FileMenuBar a static final constant or non-public and provide accessors if needed.(ŞÍ¨Ü
-k
-java:S1104%"PMake list a static final constant or non-public and provide accessors if needed.(Ú »ìùÿÿÿÿ
+java:S1104+"WMake FileMenuBar a static final constant or non-public and provide accessors if needed.(ŞÍ¨Ü
 o
-java:S1104&"YMake ShowCompleted a static final constant or non-public and provide accessors if needed.(º¯°ˆ
+java:S1104-"YMake ShowCompleted a static final constant or non-public and provide accessors if needed.(º¯°ˆ
 p
-java:S1104'"UMake searchBox a static final constant or non-public and provide accessors if needed.(ªÛÖÛÿÿÿÿÿ
+java:S1104."UMake searchBox a static final constant or non-public and provide accessors if needed.(ªÛÖÛÿÿÿÿÿ
 p
-java:S1104("UMake clearList a static final constant or non-public and provide accessors if needed.(ÕÊ•ôúÿÿÿÿ
+java:S1104/"UMake clearList a static final constant or non-public and provide accessors if needed.(ÕÊ•ôúÿÿÿÿ
 k
-java:S1104)"UMake addButton a static final constant or non-public and provide accessors if needed.(éËÔ
+java:S11040"UMake addButton a static final constant or non-public and provide accessors if needed.(éËÔ
 l
-java:S1104*"VMake openButton a static final constant or non-public and provide accessors if needed.(ğ‰µ…
+java:S11041"VMake openButton a static final constant or non-public and provide accessors if needed.(ğ‰µ…
 l
-java:S1104+"VMake saveButton a static final constant or non-public and provide accessors if needed.(ğÎìá
+java:S11042"VMake saveButton a static final constant or non-public and provide accessors if needed.(ğÎìá
 p
-java:S1104,"UMake listTitle a static final constant or non-public and provide accessors if needed.(Ğ‰–øÿÿÿÿ
+java:S11043"UMake listTitle a static final constant or non-public and provide accessors if needed.(Ğ‰–øÿÿÿÿ

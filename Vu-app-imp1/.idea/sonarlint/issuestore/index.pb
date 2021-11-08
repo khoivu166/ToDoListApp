@@ -1,43 +1,45 @@
 
 E
 docs/ToDoListUML.puml,6\d\6d41dc1360ff0684c10ec96946c37728d0bf46dc
-W
-'src/main/java/baseline/application.java,9\c\9c038a36a8909f70ccc8fda566424edceb7e27f2
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-U
-%src/main/java/baseline/EditEvent.java,a\1\a1ef7adf9c4c79e9dd162f65e8fc0291b30ca045
-V
-&src/main/java/baseline/FilterList.java,7\6\7635819f67d2ff1ce2301e5b2533312cccd78970
-Q
-!src/main/java/baseline/Event.java,2\d\2d0338dda4ffd7e4fec2c7886e63c06550c6a7c6
-P
- src/main/java/baseline/List.java,c\f\cffdf208ac8eebaca3bcabd6b3cee86830b99f02
 Y
 )src/test/java/baseline/EditEventTest.java,5\d\5d44e094a1acacbb1b04d1f1d0f98b37105f9590
 T
 $src/test/java/baseline/ListTest.java,3\e\3ee31fd112ee68cf9c819e038247e338dedae00b
-X
-(src/main/java/baseline/OpenListFile.java,2\2\2254a1be1b04e8b3a26e9dad905781940fc814cb
 Z
 *src/test/java/baseline/FilterListTest.java,5\a\5a20614e379cdab9b0987c5731d6d25377d308b6
 \
 ,src/test/java/baseline/OpenListFileTest.java,2\8\28d18e3c2776fcbadc44797677cebdc47e0ed74f
 L
 data/testFiles/testFile2.txt,4\5\459e1daee9b4dbc2cd068dc250ea9d8e564f901a
-Z
-*src/main/java/baseline/FXMLController.java,8\6\865e05948109ec8a9f018887b23ace747e7d7210
 O
 data/testFiles/readTestFile.txt,b\9\b954636a737ded03367691c5a41fb4f13844a39e
 T
 $src/test/java/baseline/SaveTest.java,1\0\10ce793c2f037b9dfd1a1a01559352f2ab2ab908
 K
 data/testFiles/testFile.txt,f\d\fda2121840af317e5f168c3534f38baff5e83996
-T
-$src/main/java/baseline/SaveList.java,9\8\98083d5dd89d22ea812a90f0c2f7ca9b3e7593ea
-@
-data/myList2.txt,c\8\c8694adf28de81c9f5cf1000dababafd5ee98eaa
 A
 data/testFile.txt,8\9\890e83015daa8b95d08436d99d7524bbb63a47e9
+@
+data/myList2.txt,c\8\c8694adf28de81c9f5cf1000dababafd5ee98eaa
+D
+data/GroceryList.txt,a\3\a34670c7b100e94390026a4b15dc30a473ec154e
 ?
 data/mylist.txt,c\a\ca55d7f3e135d235803041d0c47772deb3abe739
+V
+&src/main/java/baseline/FilterList.java,7\6\7635819f67d2ff1ce2301e5b2533312cccd78970
+Z
+*src/main/java/baseline/FXMLController.java,8\6\865e05948109ec8a9f018887b23ace747e7d7210
+Q
+!src/main/java/baseline/Event.java,2\d\2d0338dda4ffd7e4fec2c7886e63c06550c6a7c6
+U
+%src/main/java/baseline/EditEvent.java,a\1\a1ef7adf9c4c79e9dd162f65e8fc0291b30ca045
+X
+(src/main/java/baseline/OpenListFile.java,2\2\2254a1be1b04e8b3a26e9dad905781940fc814cb
+T
+$src/main/java/baseline/SaveList.java,9\8\98083d5dd89d22ea812a90f0c2f7ca9b3e7593ea
+_
+/src/main/java/baseline/TodoListApplication.java,9\4\948aa3e9a78a777fba2ed1c433606bbcc9fd9a59
+P
+ src/main/java/baseline/List.java,c\f\cffdf208ac8eebaca3bcabd6b3cee86830b99f02

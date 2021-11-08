@@ -1,5 +1,5 @@
 /*
- *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
  *  Copyright 2021 Khoi Vu
  */
 
@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.util.Objects;
 
 
-public class application extends Application
+public class TodoListApplication extends Application
 {
 
     @Override

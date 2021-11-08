@@ -1,5 +1,5 @@
 /*
- *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
  *  Copyright 2021 Khoi Vu
  */
 
@@ -7,9 +7,7 @@ package baseline;
 
 
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import java.io.BufferedWriter;
@@ -21,34 +19,34 @@ public class SaveList
 {
     public void save(FileChooser fileChooser, TableView<Event> tableview)
     {
-        //save file
+        //show file chooser window
         File file = fileChooser.showSaveDialog(new Stage());
         if (file != null)
         {
             saveList(file, tableview.getItems());
         }
-        //if file does not exist allow user to save as a new file
-        //use try catch and a buffered writer to save the file
-
-
     }
 
     public void saveList(File file, ObservableList<Event> observableList)
     {
-
+        //use try catch and a buffered writer to save the file
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(file)))
         {
             for (Event event : observableList)
             {
+                //if a checkbox is selected
                 if (event.getCheck().isSelected())
                 {
                     writer.write("complete, ");
 
                 }
+
+                //if a checkbox is not selected
                 else if (!event.getCheck().isSelected())
                 {
                     writer.write ("incomplete, ");
                 }
+                //write to file
                 writer.write(event.getName() + ", " + event.getDesc());
                 writer.write(", " + event.getDatePicker().getValue());
                 writer.newLine();

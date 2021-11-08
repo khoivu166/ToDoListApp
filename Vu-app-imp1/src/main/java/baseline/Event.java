@@ -1,17 +1,14 @@
 /*
- *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
  *  Copyright 2021 Khoi Vu
  */
 
 package baseline;
 
 import javafx.beans.property.SimpleStringProperty;
-import javafx.collections.FXCollections;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.util.StringConverter;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -23,7 +20,7 @@ public class Event
     private SimpleStringProperty desc;
     private DatePicker datePicker;
     private CheckBox check;
-    private ComboBox<String> status;
+
 
 
     //Constructors
@@ -48,7 +45,7 @@ public class Event
         return desc.get();
     }
 
-
+    //format the date picker
     public DatePicker getDatePicker()
     {
         datePicker.setConverter(new StringConverter<>() {

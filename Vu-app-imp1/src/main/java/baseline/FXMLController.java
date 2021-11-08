@@ -1,12 +1,15 @@
 /*
- *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
+ *  UCF COP3330 Fall 2021 Application Assignment 1 Solution
  *  Copyright 2021 Khoi Vu
  */
 
 package baseline;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -16,6 +19,10 @@ import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.FileChooser;
@@ -34,7 +41,7 @@ public class FXMLController implements Initializable
     public DatePicker datePicker;
     public TableColumn<Event, CheckBox> statusColumn;
     public Menu FileMenuBar;
-    public List list = new List();
+    public static final List list = new List();
     public MenuItem ShowCompleted;
     public TextField searchBox;
     public Button clearList;
@@ -61,6 +68,8 @@ public class FXMLController implements Initializable
         tableview.setItems(list.getTodoList());
         fileChooser.setInitialDirectory(new File("data/"));
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("text file", "*.txt"));
+
+        //limit the number of characters the description box can take
         descTextField.lengthProperty().addListener((observable, oldValue, newValue) ->
         {
             if (newValue.intValue() > oldValue.intValue() && descTextField.getText().length() >= 256)
@@ -68,6 +77,8 @@ public class FXMLController implements Initializable
                 descTextField.setText(descTextField.getText().substring(0, 256));
             }
         });
+
+        //if the description field is empty disable the add button
         BooleanBinding bb = new BooleanBinding()
         {
             {
@@ -81,6 +92,7 @@ public class FXMLController implements Initializable
         };
         addButton.disableProperty().bind(bb);
 
+        // filter the list through searchbar
         FilteredList<Event> filteredlist = new FilteredList<>(List.todoList, p -> true);
         searchBox.textProperty().addListener(((observable, oldValue, newValue) ->
             filteredlist.setPredicate(event ->
@@ -90,6 +102,7 @@ public class FXMLController implements Initializable
                     return true;
                 }
 
+                // allow the task to be found regardless of case
                 String lowerCaseFilter = newValue.toLowerCase();
                 return event.getName().toLowerCase().contains(lowerCaseFilter) || event.getDesc().toLowerCase().contains(lowerCaseFilter);
             })));
@@ -148,33 +161,45 @@ public class FXMLController implements Initializable
         change.editName (tableview, addEventStringCellEditEvent);
     }
 
+    //show only incomplete items
     public void showIncomplete()
     {
+        //call method to show incomplete items
         FilterList filter = new FilterList();
         filter.filterIncomplete(tableview);
     }
 
+    //show only complete items
     public void showComplete()
-    {
+    {//call method to show complete items
         FilterList filter = new FilterList();
         filter.filterComplete(tableview);
     }
 
+    //show all items
     public void showAll()
     {
         FilterList filter = new FilterList();
         filter.filterAll(tableview);
     }
 
+    //clear the list
     public void clearTheList()
     {
         List.todoList.clear();
     }
 
+    //update the list title
     public void updateListTitle()
     {
         fileChooser.setInitialFileName(listTitle.getText());
         tableview.focusModelProperty();
+    }
+
+    //open the user guide
+    public void openUserGuideLink() throws URISyntaxException, IOException
+    {
+        Desktop.getDesktop().browse(new URI("https://github.com/khoivu166/vu-app1-impl"));
     }
 }
 

@@ -28,6 +28,11 @@
                   <MenuItem mnemonicParsing="false" onAction="#showAll" text="Show All" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem fx:id="openLink" mnemonicParsing="false" onAction="#openUserGuideLink" text="User Guide" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="603.0">
