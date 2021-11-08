@@ -17,40 +17,41 @@
         <menus>
           <Menu fx:id="FileMenuBar" mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#newList" text="New" />
-                  <MenuItem mnemonicParsing="false" onAction="#openList" text="Open" />
-                  <MenuItem mnemonicParsing="false" onAction="#saveList" text="Save" />
+                  <MenuItem fx:id="openButton" mnemonicParsing="false" onAction="#openList" text="Open" />
+                  <MenuItem fx:id="saveButton" mnemonicParsing="false" onAction="#saveList" text="Save" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="View">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#showComplete" text="Show Completed" />
+              <MenuItem fx:id="ShowCompleted" mnemonicParsing="false" onAction="#showComplete" text="Show Completed" />
                   <MenuItem mnemonicParsing="false" onAction="#showIncomplete" text="Show Uncompleted" />
-                  <MenuItem mnemonicParsing="false" text="Show All" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAll" text="Show All" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="603.0">
          <children>
-            <TextField layoutX="14.0" layoutY="2.0" prefHeight="26.0" prefWidth="202.0" promptText="Enter List Title (min 3 char)" />
+            <TextField fx:id="listTitle" layoutX="14.0" layoutY="2.0" onMouseExited="#updateListTitle" prefHeight="26.0" prefWidth="202.0" promptText="Enter List Title " />
+            <TextField fx:id="searchBox" layoutX="440.0" layoutY="3.0" promptText="Search" />
          </children>
       </AnchorPane>
       <TableView fx:id="tableview" prefHeight="407.0" prefWidth="603.0">
         <columns>
           <TableColumn id="statusColumn" fx:id="statusColumn" prefWidth="75.0" text="Check" />
-          <TableColumn id="nameColumn" fx:id="eventColumn" prefWidth="75.0" text="Event Name" />
-            <TableColumn id="dateColumn" fx:id="dateColumn" prefWidth="108.00001525878906" text="Date" />
-            <TableColumn id="descColumn" fx:id="descColumn" prefWidth="344.0000183105469" text="Description" />
+          <TableColumn id="nameColumn" fx:id="eventColumn" onEditCommit="#changeEventName" prefWidth="105.0" text="Event Name" />
+            <TableColumn id="dateColumn" fx:id="dateColumn" prefWidth="109.0" text="Date" />
+            <TableColumn id="descColumn" fx:id="descColumn" onEditCommit="#changeDesc" prefWidth="314.0" text="Description" />
         </columns>
       </TableView>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="101.0" prefWidth="600.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="600.0">
          <children>
-            <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonAdd" text="Add " textAlignment="CENTER" />
-            <DatePicker fx:id="datePicker" layoutX="93.0" layoutY="17.0" prefHeight="26.0" prefWidth="134.0" promptText="YYYY-MM-DD" />
-            <TextField fx:id="eventTextField" layoutX="249.0" layoutY="17.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter Event Name" />
+            <Button fx:id="addButton" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonAdd" text="Add " textAlignment="CENTER" />
+            <DatePicker fx:id="datePicker" layoutX="233.0" layoutY="16.0" prefHeight="26.0" prefWidth="134.0" promptText="YYYY-MM-DD" />
+            <TextField fx:id="eventTextField" layoutX="93.0" layoutY="16.0" prefHeight="26.0" prefWidth="122.0" promptText="Enter Event Name" />
             <TextField fx:id="descTextField" layoutX="384.0" layoutY="16.0" prefHeight="26.0" prefWidth="201.0" promptText="Enter Description" />
             <Button layoutX="25.0" layoutY="55.0" mnemonicParsing="false" onAction="#buttonDelete" text="Delete" />
+            <Button fx:id="clearList" layoutX="93.0" layoutY="55.0" mnemonicParsing="false" onAction="#clearTheList" text="Clear List" />
          </children>
       </AnchorPane>
    </items>

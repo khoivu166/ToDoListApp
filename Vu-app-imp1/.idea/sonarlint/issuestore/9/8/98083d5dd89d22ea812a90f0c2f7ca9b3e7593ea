@@ -1,7 +1,6 @@
 
-S
-java:S1854"8Remove this useless assignment to local variable "file".(«…Ìışÿÿÿÿ
-D
-java:S1481")Remove this unused "file" local variable.(«…Ìışÿÿÿÿ
-O
-java:S1128	"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8ˆ‰õ£Ë/
+a
+java:S1128
+"KRemove this unused import 'javafx.collections.transformation.FilteredList'.(¼¯¦
+X
+java:S1128";Remove this unused import 'javafx.scene.control.TextField'.(¨¢¤¶8ó“ëäÏ/
