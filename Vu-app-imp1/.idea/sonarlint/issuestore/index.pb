@@ -1,8 +1,6 @@
 
 E
 docs/ToDoListUML.puml,6\d\6d41dc1360ff0684c10ec96946c37728d0bf46dc
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 Y
 )src/test/java/baseline/EditEventTest.java,5\d\5d44e094a1acacbb1b04d1f1d0f98b37105f9590
 T
@@ -29,10 +27,6 @@ D
 data/mylist.txt,c\a\ca55d7f3e135d235803041d0c47772deb3abe739
 V
 &src/main/java/baseline/FilterList.java,7\6\7635819f67d2ff1ce2301e5b2533312cccd78970
-Z
-*src/main/java/baseline/FXMLController.java,8\6\865e05948109ec8a9f018887b23ace747e7d7210
-Q
-!src/main/java/baseline/Event.java,2\d\2d0338dda4ffd7e4fec2c7886e63c06550c6a7c6
 U
 %src/main/java/baseline/EditEvent.java,a\1\a1ef7adf9c4c79e9dd162f65e8fc0291b30ca045
 X
